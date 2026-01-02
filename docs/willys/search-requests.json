@@ -1,0 +1,1333 @@
+{
+  "timestamp": "2025-08-30T09:32:49.631Z",
+  "totalRequests": 76,
+  "requests": [
+    {
+      "url": "https://www.willys.se/axfood/rest/customer",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiMGM1ZTA1MjE5NTllNzc5YSIsInRyIjoiZTRkOTk1YzM4ZmE4OTQwNzlmYTY5MzA2MWMxMjllODIiLCJ0aSI6MTc1NjU0NjMyODMxN319",
+        "traceparent": "00-e4d995c38fa894079fa693061c129e82-0c5e0521959e779a-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-0c5e0521959e779a----1756546328317"
+      },
+      "postData": null,
+      "timestamp": 1756546328350
+    },
+    {
+      "url": "https://www.willys.se/productBannerComponent/comp_0000NFDI?size=999",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiNWFiNGZjMDQzMDZmYjI3YiIsInRyIjoiMzA4Yzk5NDk5OTJjNzFkOWZjOTc3YmJiODNhMDliZGQiLCJ0aSI6MTc1NjU0NjMyODM2Nn19",
+        "traceparent": "00-308c9949992c71d9fc977bbb83a09bdd-5ab4fc04306fb27b-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-5ab4fc04306fb27b----1756546328366"
+      },
+      "postData": null,
+      "timestamp": 1756546328406
+    },
+    {
+      "url": "https://www.willys.se/productBannerComponent/packages/comp_0000NFDI",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiNzg0MWVlZTQyYTZkNWRmYyIsInRyIjoiNDY1MjkxYTNhMDdhYWZlZTlhNTkxZmRlMzMzZjgzMmMiLCJ0aSI6MTc1NjU0NjMyODM2Nn19",
+        "traceparent": "00-465291a3a07aafee9a591fde333f832c-7841eee42a6d5dfc-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-7841eee42a6d5dfc----1756546328366"
+      },
+      "postData": null,
+      "timestamp": 1756546328406
+    },
+    {
+      "url": "https://www.willys.se/productBannerComponent/comp_0000NFDF?size=999",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiYWE3M2ViYmUxNmFmMGIyNyIsInRyIjoiM2MzMmExZDY4ODdiZGQwODE3Yjc1ZGQ1M2QzMTFmNDgiLCJ0aSI6MTc1NjU0NjMyODM2N319",
+        "traceparent": "00-3c32a1d6887bdd0817b75dd53d311f48-aa73ebbe16af0b27-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-aa73ebbe16af0b27----1756546328367"
+      },
+      "postData": null,
+      "timestamp": 1756546328406
+    },
+    {
+      "url": "https://www.willys.se/productBannerComponent/packages/comp_0000NFDF",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiZmM3M2Y0ZDQ2NWVkMGYxYyIsInRyIjoiNzhkYWZiZDgxN2UyNjg5YmM0M2ZhNjM1ODM1NGMzZmMiLCJ0aSI6MTc1NjU0NjMyODM2N319",
+        "traceparent": "00-78dafbd817e2689bc43fa6358354c3fc-fc73f4d465ed0f1c-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-fc73f4d465ed0f1c----1756546328367"
+      },
+      "postData": null,
+      "timestamp": 1756546328406
+    },
+    {
+      "url": "https://www.willys.se/productBannerComponent/comp_0000NFDG?size=999",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiNmMxZTEzZDg3ZmQzNzA2MyIsInRyIjoiNTZiMDc5MDA0ZGQ5NDdiZTJkOTk5ODgyNTAyMmFiMGIiLCJ0aSI6MTc1NjU0NjMyODM2N319",
+        "traceparent": "00-56b079004dd947be2d9998825022ab0b-6c1e13d87fd37063-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-6c1e13d87fd37063----1756546328367"
+      },
+      "postData": null,
+      "timestamp": 1756546328406
+    },
+    {
+      "url": "https://www.willys.se/productBannerComponent/packages/comp_0000NFDG",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiMjRhMzU1OGU3YjU5ZTc0NyIsInRyIjoiYWY4NTRiMzQwZDg5M2QzYmM0NWQyZDk5Y2YwMWRkZTEiLCJ0aSI6MTc1NjU0NjMyODM2N319",
+        "traceparent": "00-af854b340d893d3bc45d2d99cf01dde1-24a3558e7b59e747-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-24a3558e7b59e747----1756546328367"
+      },
+      "postData": null,
+      "timestamp": 1756546328406
+    },
+    {
+      "url": "https://www.willys.se/productBannerComponent/comp_0000NFDE?size=999",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiNTA4ZjQ0OTdlMzQ2ZTlmMiIsInRyIjoiODQ0M2NjMmRmNDMyYzYxMjQxZTVkNGNhNzUwMjc4ZDciLCJ0aSI6MTc1NjU0NjMyODM2N319",
+        "traceparent": "00-8443cc2df432c61241e5d4ca750278d7-508f4497e346e9f2-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-508f4497e346e9f2----1756546328367"
+      },
+      "postData": null,
+      "timestamp": 1756546328407
+    },
+    {
+      "url": "https://www.willys.se/productBannerComponent/packages/comp_0000NFDE",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiZGIxNTIyMGQ2ZGY4MDcxOCIsInRyIjoiN2YyNjkwZWE5ZDEzZTY4MjEzYTAyMjJmN2UxNjUyMTIiLCJ0aSI6MTc1NjU0NjMyODM2N319",
+        "traceparent": "00-7f2690ea9d13e68213a0222f7e165212-db15220d6df80718-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-db15220d6df80718----1756546328367"
+      },
+      "postData": null,
+      "timestamp": 1756546328407
+    },
+    {
+      "url": "https://www.willys.se/productBannerComponent/comp_0000BMZL?size=999",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiOTJiMDk4NGE0MjlkZGVkOCIsInRyIjoiYmFkOTNjZDY3NjQ5MDgyNTdmZDY0Y2I5N2I0NWIzNzMiLCJ0aSI6MTc1NjU0NjMyODM2N319",
+        "traceparent": "00-bad93cd6764908257fd64cb97b45b373-92b0984a429dded8-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-92b0984a429dded8----1756546328367"
+      },
+      "postData": null,
+      "timestamp": 1756546328407
+    },
+    {
+      "url": "https://www.willys.se/productBannerComponent/packages/comp_0000BMZL",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiZmMwMzk0NTg5NmQ0ZDc4ZiIsInRyIjoiZjJkMDAzNmVhYjA5ZmQyODBiNWEyOGFiNWUwZjc3N2UiLCJ0aSI6MTc1NjU0NjMyODM2N319",
+        "traceparent": "00-f2d0036eab09fd280b5a28ab5e0f777e-fc03945896d4d78f-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-fc03945896d4d78f----1756546328367"
+      },
+      "postData": null,
+      "timestamp": 1756546328407
+    },
+    {
+      "url": "https://www.willys.se/axfood/rest/cart",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiMGE1NzA3ZGIxZmQxOTFhMSIsInRyIjoiM2VlNWJlZmIxMTliMmJjYWUzNGUwZWZlMDZkYzA1NzgiLCJ0aSI6MTc1NjU0NjMyODQ0MX19",
+        "traceparent": "00-3ee5befb119b2bcae34e0efe06dc0578-0a5707db1fd191a1-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-0a5707db1fd191a1----1756546328441"
+      },
+      "postData": null,
+      "timestamp": 1756546328445
+    },
+    {
+      "url": "https://www.willys.se/axfood/rest/store/active",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiMDNmYzUzZjIwNjFiNTQ3NyIsInRyIjoiZTYxOTZhZjVjODkxYWNhM2FjZDNmMTZiNWMzOTM1MjciLCJ0aSI6MTc1NjU0NjMyODQ0MX19",
+        "traceparent": "00-e6196af5c891aca3acd3f16b5c393527-03fc53f2061b5477-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-03fc53f2061b5477----1756546328441"
+      },
+      "postData": null,
+      "timestamp": 1756546328445
+    },
+    {
+      "url": "https://www.willys.se/axfood/rest/allexternalvouchers",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiZTkyMzliMjNkOGZkMjBlYSIsInRyIjoiYmE0YTMxYWQzMjViYWZjNzU2MjdiYTQ3ZDQ3ODcxMmMiLCJ0aSI6MTc1NjU0NjMyODQ0MX19",
+        "traceparent": "00-ba4a31ad325bafc75627ba47d478712c-e9239b23d8fd20ea-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-e9239b23d8fd20ea----1756546328441"
+      },
+      "postData": null,
+      "timestamp": 1756546328445
+    },
+    {
+      "url": "https://www.willys.se/axfood/rest/feature",
+      "method": "GET",
+      "headers": {
+        "x-newrelic-id": "VQcCVVdaDhAHUFFTDwQAVFc=",
+        "x-request-id": "42a4b856-595a-4140-8ee8-a07e36ccb4a7",
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiNzBhMjNkOWZiYjViMmRkOSIsInRyIjoiMWZlMTg0MDhiMjE0ZmJhMDEyOGI4MzRjNGVlNWY2ZjQiLCJ0aSI6MTc1NjU0NjMyODQ0NH19",
+        "traceparent": "00-1fe18408b214fba0128b834c4ee5f6f4-70a23d9fbb5b2dd9-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-70a23d9fbb5b2dd9----1756546328444"
+      },
+      "postData": null,
+      "timestamp": 1756546328446
+    },
+    {
+      "url": "https://www.willys.se/productBannerComponent/comp_0000NFDI?size=999",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiYjM2MjNlOGUwMjE4NTE3MSIsInRyIjoiNjFkNGJkMjBkOTRhY2ZlZTE2OWZkMDBiNjUzYTcxZWMiLCJ0aSI6MTc1NjU0NjMyODUxOX19",
+        "traceparent": "00-61d4bd20d94acfee169fd00b653a71ec-b3623e8e02185171-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-b3623e8e02185171----1756546328519"
+      },
+      "postData": null,
+      "timestamp": 1756546328524
+    },
+    {
+      "url": "https://www.willys.se/productBannerComponent/packages/comp_0000NFDI",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiZDQ2NjNjNTg4YWU5YTJiOSIsInRyIjoiMDIyODgzNmY1Y2U1OWY3Mzk5ZDFkODNjZTMzYjgwN2QiLCJ0aSI6MTc1NjU0NjMyODUxOX19",
+        "traceparent": "00-0228836f5ce59f7399d1d83ce33b807d-d4663c588ae9a2b9-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-d4663c588ae9a2b9----1756546328519"
+      },
+      "postData": null,
+      "timestamp": 1756546328524
+    },
+    {
+      "url": "https://www.willys.se/productBannerComponent/comp_0000NFDF?size=999",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiOWI4MTVmYWQ2OWNiMDQ3MiIsInRyIjoiZjI5ODAzNjBjNTBkZDRjNDU2YTc2NDg3YjFkNTdjMDMiLCJ0aSI6MTc1NjU0NjMyODUxOX19",
+        "traceparent": "00-f2980360c50dd4c456a76487b1d57c03-9b815fad69cb0472-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-9b815fad69cb0472----1756546328519"
+      },
+      "postData": null,
+      "timestamp": 1756546328524
+    },
+    {
+      "url": "https://www.willys.se/productBannerComponent/packages/comp_0000NFDF",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiMjIwYjAyNjkxZDgyOGIwZiIsInRyIjoiY2Q1NmE0N2RiZGQ4YzQ2ZWNlNmNmNDQ2MjZhM2QyNjYiLCJ0aSI6MTc1NjU0NjMyODUxOX19",
+        "traceparent": "00-cd56a47dbdd8c46ece6cf44626a3d266-220b02691d828b0f-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-220b02691d828b0f----1756546328519"
+      },
+      "postData": null,
+      "timestamp": 1756546328524
+    },
+    {
+      "url": "https://www.willys.se/productBannerComponent/comp_0000NFDG?size=999",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiMDNhZWJhMDVjNjMyNzM5YSIsInRyIjoiZTNhMTgwMGRhZjNhZjg4Mzg3NjE4NTAyMDJmNGVkMmEiLCJ0aSI6MTc1NjU0NjMyODUxOX19",
+        "traceparent": "00-e3a1800daf3af8838761850202f4ed2a-03aeba05c632739a-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-03aeba05c632739a----1756546328519"
+      },
+      "postData": null,
+      "timestamp": 1756546328528
+    },
+    {
+      "url": "https://www.willys.se/productBannerComponent/packages/comp_0000NFDG",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiMGExN2RjOTJkYWIzMjUwNyIsInRyIjoiYmU2ZTY3YTRmNzU0MjgwNmFlOTc4YTllMGI0NjVjNzEiLCJ0aSI6MTc1NjU0NjMyODUxOX19",
+        "traceparent": "00-be6e67a4f7542806ae978a9e0b465c71-0a17dc92dab32507-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-0a17dc92dab32507----1756546328519"
+      },
+      "postData": null,
+      "timestamp": 1756546328528
+    },
+    {
+      "url": "https://www.willys.se/productBannerComponent/comp_0000NFDE?size=999",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiNDQ1NTE1ZWE1MGIwMjQ3ZSIsInRyIjoiMmIwOTY1MTA4MzkzMzRlZjU1NGE1ZTcyZGJiMjAyNWUiLCJ0aSI6MTc1NjU0NjMyODUxOX19",
+        "traceparent": "00-2b096510839334ef554a5e72dbb2025e-445515ea50b0247e-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-445515ea50b0247e----1756546328519"
+      },
+      "postData": null,
+      "timestamp": 1756546328528
+    },
+    {
+      "url": "https://www.willys.se/productBannerComponent/packages/comp_0000NFDE",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiZDM3NmQyMzRjNjBmZjFlYSIsInRyIjoiNjUxMGY4NWY2ZmUxY2ZjYWVmYjZmZWEwZGVmNTM3ZDAiLCJ0aSI6MTc1NjU0NjMyODUxOX19",
+        "traceparent": "00-6510f85f6fe1cfcaefb6fea0def537d0-d376d234c60ff1ea-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-d376d234c60ff1ea----1756546328519"
+      },
+      "postData": null,
+      "timestamp": 1756546328528
+    },
+    {
+      "url": "https://www.willys.se/productBannerComponent/comp_0000BMZL?size=999",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiNmY0NTA2ODNiMjZmYmIwNiIsInRyIjoiZmIxN2ZjNjcxYzIwYTllNTY0ZWFlMmZjYmViMWIxZmIiLCJ0aSI6MTc1NjU0NjMyODUxOX19",
+        "traceparent": "00-fb17fc671c20a9e564eae2fcbeb1b1fb-6f450683b26fbb06-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-6f450683b26fbb06----1756546328519"
+      },
+      "postData": null,
+      "timestamp": 1756546328528
+    },
+    {
+      "url": "https://www.willys.se/productBannerComponent/packages/comp_0000BMZL",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiNDc0ZDg0NmFlY2Q2MDUyZCIsInRyIjoiN2U4NzA2ODFhNTE1NWUzNWQxNDMyMWNlNWNlY2I3NDciLCJ0aSI6MTc1NjU0NjMyODUyMH19",
+        "traceparent": "00-7e870681a5155e35d14321ce5cecb747-474d846aecd6052d-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-474d846aecd6052d----1756546328520"
+      },
+      "postData": null,
+      "timestamp": 1756546328528
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Tortilla-Original-Medium-8-pack-101295571_ST.json?name=Tortilla-Original-Medium-8-pack-101295571_ST&productCode=101295571_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiZjE5MGJkYWJkZjg0MmEyNyIsInRyIjoiZGU2Njk4Yjk2YmU1MjMzMTZkMjE0NGFjNWNmMzk2MTYiLCJ0aSI6MTc1NjU0NjMyOTA2Mn19",
+        "x-nextjs-data": "1",
+        "traceparent": "00-de6698b96be523316d2144ac5cf39616-f190bdabdf842a27-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-f190bdabdf842a27----1756546329062"
+      },
+      "postData": null,
+      "timestamp": 1756546329063
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Taco-Spice-Mix-Mild-101240169_ST.json?name=Taco-Spice-Mix-Mild-101240169_ST&productCode=101240169_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiODlkNjE1OGJhYTE5YWMwNCIsInRyIjoiNTM3ZGVlYjU5NDQ0ZTZjMDE1YzllOGFkYzJjOWJjYzQiLCJ0aSI6MTc1NjU0NjMyOTA2Mn19",
+        "x-nextjs-data": "1",
+        "traceparent": "00-537deeb59444e6c015c9e8adc2c9bcc4-89d6158baa19ac04-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-89d6158baa19ac04----1756546329062"
+      },
+      "postData": null,
+      "timestamp": 1756546329064
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Notfars-15procent-101599078_ST.json?name=Notfars-15procent-101599078_ST&productCode=101599078_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiMzBmMDE2OGU1OWE2MWVmMyIsInRyIjoiYzBkNDcxYzZiNzg1YTc2MzRmMWRiYWE2YzliMzk0NzciLCJ0aSI6MTc1NjU0NjMyOTA2Mn19",
+        "x-nextjs-data": "1",
+        "traceparent": "00-c0d471c6b785a7634f1dbaa6c9b39477-30f0168e59a61ef3-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-30f0168e59a61ef3----1756546329062"
+      },
+      "postData": null,
+      "timestamp": 1756546329064
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Blandfars-20procent-Sverige-101106143_ST.json?name=Blandfars-20procent-Sverige-101106143_ST&productCode=101106143_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiN2YxOWZjNTIxNzhhOTIzNCIsInRyIjoiZTMxMzdiNDBjYmRkNDAyMTg5N2YwMGMxY2VkMjM5NTciLCJ0aSI6MTc1NjU0NjMyOTA2Mn19",
+        "x-nextjs-data": "1",
+        "traceparent": "00-e3137b40cbdd4021897f00c1ced23957-7f19fc52178a9234-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-7f19fc52178a9234----1756546329062"
+      },
+      "postData": null,
+      "timestamp": 1756546329064
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Paprika-Mix-Klass-1-100816299_ST.json?name=Paprika-Mix-Klass-1-100816299_ST&productCode=100816299_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiYjk4NzMzZWJmNTlmN2RmMyIsInRyIjoiMDU5ODUwYzE2OWY0MmVmNzIxZDA1NGFmM2I2ZmQwZTMiLCJ0aSI6MTc1NjU0NjMyOTA3M319",
+        "x-nextjs-data": "1",
+        "traceparent": "00-059850c169f42ef721d054af3b6fd0e3-b98733ebf59f7df3-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-b98733ebf59f7df3----1756546329073"
+      },
+      "postData": null,
+      "timestamp": 1756546329075
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Torskfile-Sprodbakad-101545499_ST.json?name=Torskfile-Sprodbakad-101545499_ST&productCode=101545499_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiYWMyMDI3MDg2M2QxNGI4MiIsInRyIjoiN2JmMGZiYWI3OGUzNTFjYjc3YjBhZWI1ZWZhMzZkNmYiLCJ0aSI6MTc1NjU0NjMyOTA3NH19",
+        "x-nextjs-data": "1",
+        "traceparent": "00-7bf0fbab78e351cb77b0aeb5efa36d6f-ac20270863d14b82-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-ac20270863d14b82----1756546329074"
+      },
+      "postData": null,
+      "timestamp": 1756546329075
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Hamburgerbrod-Brioche-4-pack-101237094_ST.json?name=Hamburgerbrod-Brioche-4-pack-101237094_ST&productCode=101237094_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiN2ExYjRkODRhZTEzMzg5YSIsInRyIjoiNzMyZDM4ZjBhMzdmYzY2NDJkMDhkNzg5MDhhNWFiMmIiLCJ0aSI6MTc1NjU0NjMyOTA3NH19",
+        "x-nextjs-data": "1",
+        "traceparent": "00-732d38f0a37fc6642d08d78908a5ab2b-7a1b4d84ae13389a-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-7a1b4d84ae13389a----1756546329074"
+      },
+      "postData": null,
+      "timestamp": 1756546329075
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Oxfile-Brasilien-100998477_KG.json?name=Oxfile-Brasilien-100998477_KG&productCode=100998477_KG&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiOTQ4NjhhNDM3Y2I2MTM2NCIsInRyIjoiNWI0NDg5OTI4NTM0YTI4ZDQ1MzQ1YzQxNWRkODQwY2MiLCJ0aSI6MTc1NjU0NjMyOTA3NH19",
+        "x-nextjs-data": "1",
+        "traceparent": "00-5b4489928534a28d45345c415dd840cc-94868a437cb61364-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-94868a437cb61364----1756546329074"
+      },
+      "postData": null,
+      "timestamp": 1756546329075
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Spaghetti-Pasta-101175556_ST.json?name=Spaghetti-Pasta-101175556_ST&productCode=101175556_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiNTZkODYwODkxZGQ0Nzc5MyIsInRyIjoiNmYwNTMzZTBlOTIyYjYwNzdiZmU3YWZiZmZkMTk5Y2QiLCJ0aSI6MTc1NjU0NjMyOTA3NH19",
+        "x-nextjs-data": "1",
+        "traceparent": "00-6f0533e0e922b6077bfe7afbffd199cd-56d860891dd47793-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-56d860891dd47793----1756546329074"
+      },
+      "postData": null,
+      "timestamp": 1756546329075
+    },
+    {
+      "url": "https://www.willys.se/search/autocomplete/SearchBox?term=mj%C3%B6lk",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiNzA5OTA4YzViMTE1ZWFjOSIsInRyIjoiODYyMTg2YmRkZTk0YjczYjhkMWJkNWY2ZjI5ZDcwOGMiLCJ0aSI6MTc1NjU0NjMzNTU2Nn19",
+        "traceparent": "00-862186bdde94b73b8d1bd5f6f29d708c-709908c5b115eac9-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-709908c5b115eac9----1756546335566"
+      },
+      "postData": null,
+      "timestamp": 1756546335572
+    },
+    {
+      "url": "https://www.willys.se/search?q=mj%C3%B6lk&page=0&size=30",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiYWMxNmI1NTI1NWUwOTIwMyIsInRyIjoiMDA0ZTFjZDY4MTBiYjEzYWE5OGFkNzUzYTg1MmUwYjkiLCJ0aSI6MTc1NjU0NjM0MjM3M319",
+        "traceparent": "00-004e1cd6810bb13aa98ad753a852e0b9-ac16b55255e09203-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-ac16b55255e09203----1756546342373"
+      },
+      "postData": null,
+      "timestamp": 1756546342384
+    },
+    {
+      "url": "https://www.willys.se/axfood/rest/customer",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiMTZjNmQyNDBkYjIzOTJjOCIsInRyIjoiNGU0Yzg1NWIxYWMwYjg5NzA5MDExNDllMTJhMThhZmMiLCJ0aSI6MTc1NjU0NjM0MjM4NH19",
+        "traceparent": "00-4e4c855b1ac0b8970901149e12a18afc-16c6d240db2392c8-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-16c6d240db2392c8----1756546342384"
+      },
+      "postData": null,
+      "timestamp": 1756546342390
+    },
+    {
+      "url": "https://www.willys.se/axfood/rest/store/active",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiZGMwNGIzNjYxNTU3ZWMxMSIsInRyIjoiYmQwZTg5OTU1MTQ3M2EwNDc0N2NhOGI5ZmYxNDlkOWIiLCJ0aSI6MTc1NjU0NjM0MjM4OX19",
+        "traceparent": "00-bd0e899551473a04747ca8b9ff149d9b-dc04b3661557ec11-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-dc04b3661557ec11----1756546342389"
+      },
+      "postData": null,
+      "timestamp": 1756546342390
+    },
+    {
+      "url": "https://www.willys.se/axfood/rest/cart",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiYzkzNzBhMjdiMDQ2OWUxYSIsInRyIjoiYzMzNDA1NjYyMzI3ZWVlODM0M2ZiYzhmOGVlN2I3ZWEiLCJ0aSI6MTc1NjU0NjM0MjM4OX19",
+        "traceparent": "00-c33405662327eee8343fbc8f8ee7b7ea-c9370a27b0469e1a-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-c9370a27b0469e1a----1756546342389"
+      },
+      "postData": null,
+      "timestamp": 1756546342390
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Mellanmjolk-Langre-Hallbarhet-1-5procent-101233933_ST.json?q=mj%C3%B6lk&name=Mellanmjolk-Langre-Hallbarhet-1-5procent-101233933_ST&productCode=101233933_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=mj%C3%B6lk",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiOTczZjNkZTIyZjA4NDc2MyIsInRyIjoiY2U5OGQ3MTBiZTMxNzg2MzZkZmEyZGExNzljODI3ZmIiLCJ0aSI6MTc1NjU0NjM0MjYxN319",
+        "x-nextjs-data": "1",
+        "traceparent": "00-ce98d710be3178636dfa2da179c827fb-973f3de22f084763-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-973f3de22f084763----1756546342617"
+      },
+      "postData": null,
+      "timestamp": 1756546342619
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Mellanmjolk-1-5procent-101205823_ST.json?q=mj%C3%B6lk&name=Mellanmjolk-1-5procent-101205823_ST&productCode=101205823_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=mj%C3%B6lk",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiOGU1OTYyYmM1OWFiOGMzOCIsInRyIjoiZDE2MGQ2YTVmMTc0NjhkOTBkMjc4NWNkYmMwZDEyODIiLCJ0aSI6MTc1NjU0NjM0MjYxN319",
+        "x-nextjs-data": "1",
+        "traceparent": "00-d160d6a5f17468d90d2785cdbc0d1282-8e5962bc59ab8c38-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-8e5962bc59ab8c38----1756546342617"
+      },
+      "postData": null,
+      "timestamp": 1756546342619
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Mellanmjolk-Laktosfri-1-5procent-101232592_ST.json?q=mj%C3%B6lk&name=Mellanmjolk-Laktosfri-1-5procent-101232592_ST&productCode=101232592_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=mj%C3%B6lk",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiMzg3ZjdlOTBhZDFkMzEzMiIsInRyIjoiOGI4NjY5ODk2M2I4OGIyZGJkYmY5ZmJlZWZhZGY4NjYiLCJ0aSI6MTc1NjU0NjM0MjYxN319",
+        "x-nextjs-data": "1",
+        "traceparent": "00-8b86698963b88b2dbdbf9fbeefadf866-387f7e90ad1d3132-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-387f7e90ad1d3132----1756546342617"
+      },
+      "postData": null,
+      "timestamp": 1756546342619
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Mellanmjolk-Esl-1-5procent-101476218_ST.json?q=mj%C3%B6lk&name=Mellanmjolk-Esl-1-5procent-101476218_ST&productCode=101476218_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=mj%C3%B6lk",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiZDM1ODk4MzVmZjgzMjViYyIsInRyIjoiZGQ4MzQ4ZGRmNzM2OGQyOTdiZmIxZDBiMWEzYWNiYWYiLCJ0aSI6MTc1NjU0NjM0MjYxN319",
+        "x-nextjs-data": "1",
+        "traceparent": "00-dd8348ddf7368d297bfb1d0b1a3acbaf-d3589835ff8325bc-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-d3589835ff8325bc----1756546342617"
+      },
+      "postData": null,
+      "timestamp": 1756546342619
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Mjolk-Langre-Hallbarhet-3procent-101233931_ST.json?q=mj%C3%B6lk&name=Mjolk-Langre-Hallbarhet-3procent-101233931_ST&productCode=101233931_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=mj%C3%B6lk",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiNGEyYjhjYWU1MzQ4NzA4YiIsInRyIjoiYzJmZmY0NzZkNTRlZWVkYmFiOGYwNjNkYTExZDNhZDAiLCJ0aSI6MTc1NjU0NjM0MjYxN319",
+        "x-nextjs-data": "1",
+        "traceparent": "00-c2fff476d54eeedbab8f063da11d3ad0-4a2b8cae5348708b-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-4a2b8cae5348708b----1756546342617"
+      },
+      "postData": null,
+      "timestamp": 1756546342619
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Mjolk-Laktosfri-0-5procent-101475990_ST.json?q=mj%C3%B6lk&name=Mjolk-Laktosfri-0-5procent-101475990_ST&productCode=101475990_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=mj%C3%B6lk",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiMGZmY2EwMWU5NmE4ZWQ0ZSIsInRyIjoiNjYxYzk2NzVkMDA3ZjQxOTgwMjQ1OWU5Y2U1ZWY4YjIiLCJ0aSI6MTc1NjU0NjM0MjYxN319",
+        "x-nextjs-data": "1",
+        "traceparent": "00-661c9675d007f419802459e9ce5ef8b2-0ffca01e96a8ed4e-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-0ffca01e96a8ed4e----1756546342617"
+      },
+      "postData": null,
+      "timestamp": 1756546342619
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Mjolk-3procent-101205891_ST.json?q=mj%C3%B6lk&name=Mjolk-3procent-101205891_ST&productCode=101205891_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=mj%C3%B6lk",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiNDU2Yjg5N2M1YTY1OTFkZSIsInRyIjoiNTBmY2NlMjFmMzE2Y2MwYmZlNzNiODllMDk3OTg4YmMiLCJ0aSI6MTc1NjU0NjM0MjYxOH19",
+        "x-nextjs-data": "1",
+        "traceparent": "00-50fcce21f316cc0bfe73b89e097988bc-456b897c5a6591de-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-456b897c5a6591de----1756546342618"
+      },
+      "postData": null,
+      "timestamp": 1756546342619
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Mjolkdryck-Laktosfri-3procent-101244263_ST.json?q=mj%C3%B6lk&name=Mjolkdryck-Laktosfri-3procent-101244263_ST&productCode=101244263_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=mj%C3%B6lk",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiYjBlYjE0ZmRlOWExZjEwYSIsInRyIjoiZGU3N2VkYTViZWYyMGVmOTZjNjhkN2JlZWM3YWEyMDkiLCJ0aSI6MTc1NjU0NjM0MjYxOH19",
+        "x-nextjs-data": "1",
+        "traceparent": "00-de77eda5bef20ef96c68d7beec7aa209-b0eb14fde9a1f10a-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-b0eb14fde9a1f10a----1756546342618"
+      },
+      "postData": null,
+      "timestamp": 1756546342619
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Mjolk-Langre-Hallbarhet-3procent-101276728_ST.json?q=mj%C3%B6lk&name=Mjolk-Langre-Hallbarhet-3procent-101276728_ST&productCode=101276728_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=mj%C3%B6lk",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiYTYxNDVkMDRjYjFmN2JhYSIsInRyIjoiNDJmNzBlMWRkNzUyMzYwMDZjODRjOWVmMDkyNzgxZjciLCJ0aSI6MTc1NjU0NjM0MjYxOH19",
+        "x-nextjs-data": "1",
+        "traceparent": "00-42f70e1dd75236006c84c9ef092781f7-a6145d04cb1f7baa-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-a6145d04cb1f7baa----1756546342618"
+      },
+      "postData": null,
+      "timestamp": 1756546342619
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Mjolk-Farsk-3procent-100010649_ST.json?q=mj%C3%B6lk&name=Mjolk-Farsk-3procent-100010649_ST&productCode=100010649_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=mj%C3%B6lk",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiYzEzYmU2NTYyYTM1YzVhZiIsInRyIjoiOWY1NWNjODdmNTdhMDgyMDc4ZWExNWQwYjZmZGMxMjIiLCJ0aSI6MTc1NjU0NjM0MjYxOH19",
+        "x-nextjs-data": "1",
+        "traceparent": "00-9f55cc87f57a082078ea15d0b6fdc122-c13be6562a35c5af-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-c13be6562a35c5af----1756546342618"
+      },
+      "postData": null,
+      "timestamp": 1756546342619
+    },
+    {
+      "url": "https://www.willys.se/search/autocomplete/SearchBox?term=br%C3%B6d",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiZTI5MmZjYzFkOTkzYjY0ZCIsInRyIjoiNjJiZDhmYmEwMzUzZTQyNzlmYzE1YTgyZDVlYmQ2NTciLCJ0aSI6MTc1NjU0NjM0NzU4OX19",
+        "traceparent": "00-62bd8fba0353e4279fc15a82d5ebd657-e292fcc1d993b64d-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-e292fcc1d993b64d----1756546347589"
+      },
+      "postData": null,
+      "timestamp": 1756546347590
+    },
+    {
+      "url": "https://region1.google-analytics.com/g/collect?v=2&tid=G-1BYXDYG1K3&gtm=45je58r1v869668911z872159842za200zb72159842zd72159842&_p=1756546328400&gcs=G111&gcd=13r3rPr2r5l1&npa=0&dma_cps=syphamo&dma=1&tag_exp=101509157~103116026~103200004~103233427~104527906~104528500~104684208~104684211~104948813~105427542~105427544&gdid=dYWJhMj&cid=380848338.1756546331&ul=en-us&sr=1280x720&ir=1&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B24.0.0.0%7CChromium%3B140.0.7339.16&uamb=0&uam=&uap=macOS&uapv=10_15_7&uaw=0&are=1&frm=0&pscdl=noapi&_eu=MAAAAAQ&_s=5&cu=SEK&sid=1756546331&sct=1&seg=1&dl=https%3A%2F%2Fwww.willys.se%2Fsok%3Fq%3Dmj%25C3%25B6lk&dr=https%3A%2F%2Fwww.willys.se%2F&dt=Handla%20bra%20mat%20billigt%20online%20%7C%20Willys&_tu=SA&uid=&en=view_item_list&pr1=id101233933_ST~nmMellanmj%C3%B6lk%20L%C3%A4ngre%20H%C3%A5llbarhet%201%2C5%25~pr19.5~lnsearch_results%20%7C%20mj%C3%B6lk~lp0&pr2=id101205823_ST~nmMellanmj%C3%B6lk%201%2C5%25~pr13.9~lnsearch_results%20%7C%20mj%C3%B6lk~lp1&pr3=id101232592_ST~nmMellanmj%C3%B6lk%20Laktosfri%201%2C5%25~pr22.9~lnsearch_results%20%7C%20mj%C3%B6lk~lp2&pr4=id101476218_ST~nmMellanmj%C3%B6lk%20Esl%201%2C5%25~pr14.5~lnsearch_results%20%7C%20mj%C3%B6lk~lp3&pr5=id101233931_ST~nmMj%C3%B6lk%20L%C3%A4ngre%20H%C3%A5llbarhet%203%25~pr19.5~lnsearch_results%20%7C%20mj%C3%B6lk~lp4&ep.device=Web&ep.store_id=&ep.item_list_name=search_results%20%7C%20mj%C3%B6lk&_et=1259&tfd=21652",
+      "method": "POST",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "postData": null,
+      "timestamp": 1756546349633
+    },
+    {
+      "url": "https://www.willys.se/search?q=br%C3%B6d&page=0&size=30",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiNjNhOGZhYTdkNGNhNzEyOCIsInRyIjoiNTMzMDE3NDhkZTQ2ZDA2MGNiYzkyNDY2MGVlMTI3ZjciLCJ0aSI6MTc1NjU0NjM1NDM5Nn19",
+        "traceparent": "00-53301748de46d060cbc924660ee127f7-63a8faa7d4ca7128-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-63a8faa7d4ca7128----1756546354396"
+      },
+      "postData": null,
+      "timestamp": 1756546354401
+    },
+    {
+      "url": "https://www.willys.se/axfood/rest/customer",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiODBmYzliYzEzYmFiOTg1NiIsInRyIjoiMGVlNmUzYzE5ODVlNGI4YTNmOWExY2RjNDc1NTNjMDIiLCJ0aSI6MTc1NjU0NjM1NDY0OX19",
+        "traceparent": "00-0ee6e3c1985e4b8a3f9a1cdc47553c02-80fc9bc13bab9856-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-80fc9bc13bab9856----1756546354649"
+      },
+      "postData": null,
+      "timestamp": 1756546354663
+    },
+    {
+      "url": "https://www.willys.se/axfood/rest/cart",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiMGJiMmY2ZThiNzU4NGFiOSIsInRyIjoiMTY5MGFkNTQwZGU4MjgzMzIzZTUwNWY2ZjIyODFlNTAiLCJ0aSI6MTc1NjU0NjM1NDY2MX19",
+        "traceparent": "00-1690ad540de8283323e505f6f2281e50-0bb2f6e8b7584ab9-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-0bb2f6e8b7584ab9----1756546354661"
+      },
+      "postData": null,
+      "timestamp": 1756546354663
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Pagenlimpan-100548542_ST.json?q=br%C3%B6d&name=Pagenlimpan-100548542_ST&productCode=100548542_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=br%C3%B6d",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiNWE4ZTI0N2UyNGE2YTZmNCIsInRyIjoiOGEzMzk4MjI2NTk4N2VmNDZkMjc1NWY5NjdiOTgzYWMiLCJ0aSI6MTc1NjU0NjM1NDcyMn19",
+        "x-nextjs-data": "1",
+        "traceparent": "00-8a33982265987ef46d2755f967b983ac-5a8e247e24a6a6f4-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-5a8e247e24a6a6f4----1756546354722"
+      },
+      "postData": null,
+      "timestamp": 1756546354724
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Lingongrova-100168667_ST.json?q=br%C3%B6d&name=Lingongrova-100168667_ST&productCode=100168667_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=br%C3%B6d",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiNjlkYzJlZmYzNzNmZjMxNSIsInRyIjoiMGM5YmMwNmJlZjYzNzE2YmQ0NWEyYjljYjFlOWQzMGUiLCJ0aSI6MTc1NjU0NjM1NDcyM319",
+        "x-nextjs-data": "1",
+        "traceparent": "00-0c9bc06bef63716bd45a2b9cb1e9d30e-69dc2eff373ff315-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-69dc2eff373ff315----1756546354723"
+      },
+      "postData": null,
+      "timestamp": 1756546354724
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Skogaholms-Limpa-100014716_ST.json?q=br%C3%B6d&name=Skogaholms-Limpa-100014716_ST&productCode=100014716_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=br%C3%B6d",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiMGFjYWMxODA4NWVlMjRjMyIsInRyIjoiMzZjOWRmZTRjYzAzYjE5NDYyODQyZTcwNTY5YzY3NzMiLCJ0aSI6MTc1NjU0NjM1NDcyM319",
+        "x-nextjs-data": "1",
+        "traceparent": "00-36c9dfe4cc03b19462842e70569c6773-0acac18085ee24c3-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-0acac18085ee24c3----1756546354723"
+      },
+      "postData": null,
+      "timestamp": 1756546354724
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Skargardskaka-Hono-18-pack-101203170_ST.json?q=br%C3%B6d&name=Skargardskaka-Hono-18-pack-101203170_ST&productCode=101203170_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=br%C3%B6d",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiMjE3MTAzZTRjODQwZDQ4NSIsInRyIjoiM2I3NmY3OWQ3YTk1MmRmYjE5MGU1MDQ1MTIyN2Y0M2QiLCJ0aSI6MTc1NjU0NjM1NDcyM319",
+        "x-nextjs-data": "1",
+        "traceparent": "00-3b76f79d7a952dfb190e50451227f43d-217103e4c840d485-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-217103e4c840d485----1756546354723"
+      },
+      "postData": null,
+      "timestamp": 1756546354724
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Levain-101261349_ST.json?q=br%C3%B6d&name=Levain-101261349_ST&productCode=101261349_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=br%C3%B6d",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiMzEwMWM2NjUwM2YzY2U2NCIsInRyIjoiOWE3ZmYzYzZjOTJjMTNjMjAzZGVhYzg5MGIyODc3NDAiLCJ0aSI6MTc1NjU0NjM1NDcyM319",
+        "x-nextjs-data": "1",
+        "traceparent": "00-9a7ff3c6c92c13c203deac890b287740-3101c66503f3ce64-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-3101c66503f3ce64----1756546354723"
+      },
+      "postData": null,
+      "timestamp": 1756546354724
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Varsagod-Skivad-100769562_ST.json?q=br%C3%B6d&name=Varsagod-Skivad-100769562_ST&productCode=100769562_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=br%C3%B6d",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiODRiNzkwY2Y4NzU3YTliNCIsInRyIjoiN2I0OTFhYzUyYjk2MWM1NmFjMzU3ZDM2MTgzODkwYmQiLCJ0aSI6MTc1NjU0NjM1NDcyM319",
+        "x-nextjs-data": "1",
+        "traceparent": "00-7b491ac52b961c56ac357d36183890bd-84b790cf8757a9b4-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-84b790cf8757a9b4----1756546354723"
+      },
+      "postData": null,
+      "timestamp": 1756546354724
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Guldkorn-100168649_ST.json?q=br%C3%B6d&name=Guldkorn-100168649_ST&productCode=100168649_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=br%C3%B6d",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiM2QxMTU2ZmI5Mjk0ZWI4YSIsInRyIjoiM2ZhZTZlMzY5NDdhYTllY2FhMWVhMWFhMzE0NzQxZjciLCJ0aSI6MTc1NjU0NjM1NDcyM319",
+        "x-nextjs-data": "1",
+        "traceparent": "00-3fae6e36947aa9ecaa1ea1aa314741f7-3d1156fb9294eb8a-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-3d1156fb9294eb8a----1756546354723"
+      },
+      "postData": null,
+      "timestamp": 1756546354724
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Jollekaka-Hono-6-pack-101332489_ST.json?q=br%C3%B6d&name=Jollekaka-Hono-6-pack-101332489_ST&productCode=101332489_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=br%C3%B6d",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiYmIzOTJkMzkyNDEwMGUxNiIsInRyIjoiMWE5NjdhNGQzOTY4ZDQxODJlNGJkN2U5ZGI0NzQ2NGMiLCJ0aSI6MTc1NjU0NjM1NDcyM319",
+        "x-nextjs-data": "1",
+        "traceparent": "00-1a967a4d3968d4182e4bd7e9db47464c-bb392d3924100e16-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-bb392d3924100e16----1756546354723"
+      },
+      "postData": null,
+      "timestamp": 1756546354724
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Vetekaka-24-pack-101358223_ST.json?q=br%C3%B6d&name=Vetekaka-24-pack-101358223_ST&productCode=101358223_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=br%C3%B6d",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiZDc0MjYxMDM4ZDM3OThiNSIsInRyIjoiOGU5YzQ3N2M5ZGYwYjgyNmExMmY0ZmU1N2Y2YzA5YmEiLCJ0aSI6MTc1NjU0NjM1NDcyM319",
+        "x-nextjs-data": "1",
+        "traceparent": "00-8e9c477c9df0b826a12f4fe57f6c09ba-d74261038d3798b5-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-d74261038d3798b5----1756546354723"
+      },
+      "postData": null,
+      "timestamp": 1756546354724
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/Raglevain-101275217_ST.json?q=br%C3%B6d&name=Raglevain-101275217_ST&productCode=101275217_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=br%C3%B6d",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiNGJkOGNlMjk1OGViNTlmMCIsInRyIjoiZGQ0ZTBmNjI5ZGZmMDUxODcwNDVmNjJkYzFjYmZlNTMiLCJ0aSI6MTc1NjU0NjM1NDcyM319",
+        "x-nextjs-data": "1",
+        "traceparent": "00-dd4e0f629dff05187045f62dc1cbfe53-4bd8ce2958eb59f0-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-4bd8ce2958eb59f0----1756546354723"
+      },
+      "postData": null,
+      "timestamp": 1756546354724
+    },
+    {
+      "url": "https://www.willys.se/search/autocomplete/SearchBox?term=%C3%A4pplen",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiM2FmNzA4ODE5ZTM1OWVkZiIsInRyIjoiZGVmYjg0NTkxYWViY2JkNGNmM2RlOTUyMTQyNmQ2NWEiLCJ0aSI6MTc1NjU0NjM1OTc3OX19",
+        "traceparent": "00-defb84591aebcbd4cf3de9521426d65a-3af708819e359edf-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-3af708819e359edf----1756546359779"
+      },
+      "postData": null,
+      "timestamp": 1756546359780
+    },
+    {
+      "url": "https://www.willys.se/search?q=%C3%A4pplen&page=0&size=30",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiZWNjZjg1MjYzYTMzZjdlOCIsInRyIjoiODQ4ZjFmNjA2Zjk0N2U5ZjIyMzM0NWI0MzFmMDZmZTMiLCJ0aSI6MTc1NjU0NjM2NjU5Nn19",
+        "traceparent": "00-848f1f606f947e9f223345b431f06fe3-eccf85263a33f7e8-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-eccf85263a33f7e8----1756546366596"
+      },
+      "postData": null,
+      "timestamp": 1756546366621
+    },
+    {
+      "url": "https://www.willys.se/axfood/rest/customer",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiZTA0NDg1MjM3MTRmZTc1ZSIsInRyIjoiY2UyYTRlOTVkNTg2MDJhNTYyMjYwNjhhMTRmZDQzOTAiLCJ0aSI6MTc1NjU0NjM2Njc4Nn19",
+        "traceparent": "00-ce2a4e95d58602a56226068a14fd4390-e0448523714fe75e-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-e0448523714fe75e----1756546366786"
+      },
+      "postData": null,
+      "timestamp": 1756546366795
+    },
+    {
+      "url": "https://www.willys.se/axfood/rest/cart",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiYzE5ZTEzOTg1MWY0MGYyMCIsInRyIjoiNGNlYjAyYjBkYzA2ZDQ2OTZlZGQ5NTQxODI2MDQyODQiLCJ0aSI6MTc1NjU0NjM2Njc5M319",
+        "traceparent": "00-4ceb02b0dc06d4696edd954182604284-c19e139851f40f20-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-c19e139851f40f20----1756546366793"
+      },
+      "postData": null,
+      "timestamp": 1756546366795
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/apple-Royal-Gala-Klass-1-101273869_KG.json?q=%C3%A4pplen&name=apple-Royal-Gala-Klass-1-101273869_KG&productCode=101273869_KG&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=%C3%A4pplen",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiMzMyMGVkMWZkODQ3OGQwOSIsInRyIjoiNjc5ZDA5MzNlOTUwODZkZTRjOWY4N2E1MGMwMjg4ZGMiLCJ0aSI6MTc1NjU0NjM2NjgwMX19",
+        "x-nextjs-data": "1",
+        "traceparent": "00-679d0933e95086de4c9f87a50c0288dc-3320ed1fd8478d09-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-3320ed1fd8478d09----1756546366801"
+      },
+      "postData": null,
+      "timestamp": 1756546366803
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/apple-Pink-Lady-Klass-1-100144318_KG.json?q=%C3%A4pplen&name=apple-Pink-Lady-Klass-1-100144318_KG&productCode=100144318_KG&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=%C3%A4pplen",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiNmMwZWE3NjY3ZjkxNDkxYiIsInRyIjoiZDFhNThmNDFkZWFkMzNhM2U5M2Y3ZGIwN2ZmNWE4MjMiLCJ0aSI6MTc1NjU0NjM2NjgwMX19",
+        "x-nextjs-data": "1",
+        "traceparent": "00-d1a58f41dead33a3e93f7db07ff5a823-6c0ea7667f91491b-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-6c0ea7667f91491b----1756546366801"
+      },
+      "postData": null,
+      "timestamp": 1756546366803
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/apple-Granny-Smith-Klass-1-100142221_KG.json?q=%C3%A4pplen&name=apple-Granny-Smith-Klass-1-100142221_KG&productCode=100142221_KG&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=%C3%A4pplen",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiYTk4YzU1NzNlZmJiZWVmMCIsInRyIjoiNTRlNDhmMDUzNjY0MzE3NGY3MzZhZWJhOTI5YzJmNTAiLCJ0aSI6MTc1NjU0NjM2NjgwMX19",
+        "x-nextjs-data": "1",
+        "traceparent": "00-54e48f0536643174f736aeba929c2f50-a98c5573efbbeef0-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-a98c5573efbbeef0----1756546366801"
+      },
+      "postData": null,
+      "timestamp": 1756546366803
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/apple-Jonagold-Klass-1-101692811_KG.json?q=%C3%A4pplen&name=apple-Jonagold-Klass-1-101692811_KG&productCode=101692811_KG&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=%C3%A4pplen",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiM2NlYjM2YTQ1MjRmMDkwZCIsInRyIjoiNDlkM2VmZDhiODYxNzA5YThhN2NhNWJlZjZhZGQ4N2MiLCJ0aSI6MTc1NjU0NjM2NjgwMX19",
+        "x-nextjs-data": "1",
+        "traceparent": "00-49d3efd8b861709a8a7ca5bef6add87c-3ceb36a4524f090d-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-3ceb36a4524f090d----1756546366801"
+      },
+      "postData": null,
+      "timestamp": 1756546366803
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/apple-Jonagold-Klass-1-100978836_ST.json?q=%C3%A4pplen&name=apple-Jonagold-Klass-1-100978836_ST&productCode=100978836_ST&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=%C3%A4pplen",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiZjhkNzc0YzlmMWY4YzI2MCIsInRyIjoiNTY4OGQ2MWJhZjA4OGNlY2ZlMzE3ZTBkN2RiZTM2M2YiLCJ0aSI6MTc1NjU0NjM2NjgwMX19",
+        "x-nextjs-data": "1",
+        "traceparent": "00-5688d61baf088cecfe317e0d7dbe363f-f8d774c9f1f8c260-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-f8d774c9f1f8c260----1756546366801"
+      },
+      "postData": null,
+      "timestamp": 1756546366803
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/apple-Royal-Gala-Eko-Klass-1-100475291_KG.json?q=%C3%A4pplen&name=apple-Royal-Gala-Eko-Klass-1-100475291_KG&productCode=100475291_KG&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=%C3%A4pplen",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiMWQ1ZjVmNWRmOTlkODExMyIsInRyIjoiMTNkNzA5NGQxZjZlMTUyNThlNGZkYTZhNWRmNDhmNDMiLCJ0aSI6MTc1NjU0NjM2NjgwMX19",
+        "x-nextjs-data": "1",
+        "traceparent": "00-13d7094d1f6e15258e4fda6a5df48f43-1d5f5f5df99d8113-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-1d5f5f5df99d8113----1756546366801"
+      },
+      "postData": null,
+      "timestamp": 1756546366803
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/apple-Discovery-Klass-1-100141222_KG.json?q=%C3%A4pplen&name=apple-Discovery-Klass-1-100141222_KG&productCode=100141222_KG&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=%C3%A4pplen",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiYTE0ZjM5N2VkNTBkNzc1MSIsInRyIjoiNWNkNzA3OTVhMzg4OWJhNjQ2NDU3ZjRlZjJlYTM4YWMiLCJ0aSI6MTc1NjU0NjM2NjgwMn19",
+        "x-nextjs-data": "1",
+        "traceparent": "00-5cd70795a3889ba646457f4ef2ea38ac-a14f397ed50d7751-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-a14f397ed50d7751----1756546366802"
+      },
+      "postData": null,
+      "timestamp": 1756546366803
+    },
+    {
+      "url": "https://www.willys.se/_next/data/a4eecdbf/sv/produktdetalj/apple-Aroma-Klass-1-100126061_KG.json?q=%C3%A4pplen&name=apple-Aroma-Klass-1-100126061_KG&productCode=100126061_KG&showInModal=true",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"macOS\"",
+        "referer": "https://www.willys.se/sok?q=%C3%A4pplen",
+        "purpose": "prefetch",
+        "sec-ch-ua": "\"Not=A?Brand\";v=\"24\", \"Chromium\";v=\"140\"",
+        "sec-ch-ua-mobile": "?0",
+        "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjExNTQxOTYiLCJhcCI6Ijc3MjMyNDIwMyIsImlkIjoiNDYzMDcwMDk5ZWIwZTliZCIsInRyIjoiNDNhNDRjY2VkY2RhZTY4ZDEzMjI3ZTcwYTFhY2U2OTYiLCJ0aSI6MTc1NjU0NjM2NjgwMn19",
+        "x-nextjs-data": "1",
+        "traceparent": "00-43a44ccedcdae68d13227e70a1ace696-463070099eb0e9bd-01",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+        "tracestate": "1154196@nr=0-1-1154196-772324203-463070099eb0e9bd----1756546366802"
+      },
+      "postData": null,
+      "timestamp": 1756546366803
+    }
+  ]
+}
