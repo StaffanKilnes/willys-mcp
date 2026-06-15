@@ -41,27 +41,15 @@ const handler = createMcpHandler(
       "mcp__willys_login",
       "Login to Willys with username and password. Returns a sessionId that must be used in subsequent tool calls.",
       {
-        username: z.string().optional().describe("Willys username/email (defaults to WILLYS_USERNAME env var on server)"),
-        password: z.string().optional().describe("Willys password (defaults to WILLYS_PASSWORD env var on server)"),
+        username: z.string().describe("Willys username/email"),
+        password: z.string().describe("Willys password"),
       },
       async ({ username, password }) => {
-        const resolvedUsername = username || process.env.WILLYS_USERNAME;
-        const resolvedPassword = password || process.env.WILLYS_PASSWORD;
-        if (!resolvedUsername || !resolvedPassword) {
-          return {
-            content: [
-              {
-                type: "text",
-                text: "❌ Login failed: no credentials provided and WILLYS_USERNAME/WILLYS_PASSWORD env vars not set on server",
-              },
-            ],
-          };
-        }
         try {
           const sessionId = mcpSessionStore.generateSessionId();
           const result = await mcpAuthenticateWithWillys(sessionId, {
-            username: resolvedUsername,
-            password: resolvedPassword,
+            username,
+            password,
           });
 
           if (result.success) {

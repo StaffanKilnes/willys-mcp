@@ -36,7 +36,7 @@ class WillysDatabase {
       // Use Function constructor to prevent bundler from statically analyzing the import
       try {
         const dynamicImport = new Function("module", "return import(module)");
-        sqliteVec = await dynamicImport((process.platform === "darwin" ? "sqlite-vec-darwin-arm64" : "sqlite-vec-linux-arm64"));
+        sqliteVec = await dynamicImport("sqlite-vec-darwin-arm64");
       } catch (_e) {
         sqliteVec = await import("sqlite-vec");
       }
@@ -110,8 +110,8 @@ class WillysDatabase {
               const manualPath = path.join(
                 cwd,
                 "node_modules",
-                (process.platform === "darwin" ? "sqlite-vec-darwin-arm64" : "sqlite-vec-linux-arm64"),
-                (process.platform === "darwin" ? "vec0.dylib" : "vec0.so"),
+                "sqlite-vec-darwin-arm64",
+                "vec0.dylib",
               );
               console.log("Manual extension path:", manualPath);
               console.log("Manual path exists:", fs.existsSync(manualPath));
@@ -127,8 +127,8 @@ class WillysDatabase {
                 const genericPath = path.join(
                   cwd,
                   "node_modules",
-                  (process.platform === "darwin" ? "sqlite-vec-darwin-arm64" : "sqlite-vec-linux-arm64"),
-                  (process.platform === "darwin" ? "vec0.dylib" : "vec0.so"),
+                  "sqlite-vec-darwin-arm64",
+                  "vec0.dylib",
                 );
                 if (fs.existsSync(genericPath)) {
                   this.db.loadExtension(genericPath);
