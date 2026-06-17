@@ -37,6 +37,11 @@ import {
   mcpSelectSlot,
 } from "./lib/mcp-orders";
 import { mcpSessionStore } from "./lib/mcp-session-store";
+import {
+  resolveLoginCredentials,
+  EXCLUDED_TOOLS,
+  visibleTools,
+} from "./lib/tool-policy";
 
 const server = new Server(
   {
@@ -55,14 +60,14 @@ const tools = [
   {
     name: "mcp__willys_login",
     description:
-      "Login to Willys with username and password. Returns a sessionId that must be used in subsequent tool calls.",
+      "Login to Willys. Username/password are optional — the server falls back to WILLYS_USERNAME/WILLYS_PASSWORD. Returns a sessionId for subsequent calls.",
     inputSchema: {
       type: "object" as const,
       properties: {
         username: { type: "string", description: "Willys username/email" },
         password: { type: "string", description: "Willys password" },
       },
-      required: ["username", "password"],
+      required: [],
     },
   },
   {
@@ -356,25 +361,35 @@ const tools = [
 
 // Handle list tools request
 server.setRequestHandler(ListToolsRequestSchema, async () => {
-  return { tools };
+  return { tools: visibleTools(tools) };
 });
 
 // Handle tool calls
 server.setRequestHandler(CallToolRequestSchema, async (request) => {
   const { name, arguments: args } = request.params;
 
+  if (EXCLUDED_TOOLS.has(name)) {
+    return {
+      content: [{ type: "text", text: `❌ Tool "${name}" is disabled on this server` }],
+    };
+  }
+
   try {
     switch (name) {
       case "mcp__willys_login": {
-        const { username, password } = args as {
-          username: string;
-          password: string;
-        };
+        const creds = resolveLoginCredentials(args);
+        if (!creds) {
+          return {
+            content: [
+              {
+                type: "text",
+                text: "❌ Login failed: no credentials provided and WILLYS_USERNAME/WILLYS_PASSWORD not set on server",
+              },
+            ],
+          };
+        }
         const sessionId = mcpSessionStore.generateSessionId();
-        const result = await mcpAuthenticateWithWillys(sessionId, {
-          username,
-          password,
-        });
+        const result = await mcpAuthenticateWithWillys(sessionId, creds);
 
         if (result.success) {
           return {
