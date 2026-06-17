@@ -6,8 +6,8 @@ export function resolveLoginCredentials(
   env: NodeJS.ProcessEnv = process.env,
 ): { username: string; password: string } | null {
   const a = (args ?? {}) as { username?: string; password?: string };
-  const username = a.username || env.WILLYS_USERNAME;
-  const password = a.password || env.WILLYS_PASSWORD;
+  const username = a.username ?? env.WILLYS_USERNAME;
+  const password = a.password ?? env.WILLYS_PASSWORD;
   if (!username || !password) return null;
   return { username, password };
 }

@@ -20,6 +20,12 @@ describe("resolveLoginCredentials", () => {
   it("returns null when neither args nor env present", () => {
     expect(resolveLoginCredentials({}, {})).toBeNull();
   });
+  it("returns null when only username is present", () => {
+    expect(resolveLoginCredentials({ username: "u" }, {})).toBeNull();
+  });
+  it("returns null when only password is present", () => {
+    expect(resolveLoginCredentials({}, { WILLYS_PASSWORD: "ep" })).toBeNull();
+  });
 });
 
 describe("buildExcludedTools", () => {
