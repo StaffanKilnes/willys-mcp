@@ -371,6 +371,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   if (EXCLUDED_TOOLS.has(name)) {
     return {
       content: [{ type: "text", text: `❌ Tool "${name}" is disabled on this server` }],
+      isError: true,
     };
   }
 
@@ -386,6 +387,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
                 text: "❌ Login failed: no credentials provided and WILLYS_USERNAME/WILLYS_PASSWORD not set on server",
               },
             ],
+            isError: true,
           };
         }
         const sessionId = mcpSessionStore.generateSessionId();
