@@ -1,0 +1,28 @@
+[project]
+name = "willys-mcp-shim"
+version = "0.1.0"
+description = "OAuth+bearer shim that proxies (FastMCP stdio) to the Willys TS MCP"
+requires-python = ">=3.12"
+dependencies = [
+    "fastmcp>=3.4.2",
+    "starlette>=0.37",
+    "uvicorn[standard]>=0.30",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-asyncio>=0.23", "httpx>=0.27"]
+
+[project.scripts]
+willys-mcp-shim = "willys_mcp_shim.http_server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/willys_mcp_shim"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"

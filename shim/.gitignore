@@ -1,0 +1,7 @@
+.venv/
+*.egg-info/
+__pycache__/
+*.pyc
+.env
+# un-ignore the example file (root .gitignore has .env*)
+!.env.example
