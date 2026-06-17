@@ -1,6 +1,6 @@
 """Bearer-token authentication middleware for /mcp/* paths.
 
-Accepts either the pre-shared OURA_MCP_TOKEN (atlas-internal callers)
+Accepts either the pre-shared WILLYS_MCP_TOKEN (atlas-internal callers)
 or any token in the OAuth-issued-token store (Claude.ai callers).
 """
 from __future__ import annotations
@@ -80,7 +80,7 @@ class BearerAuthMiddleware(BaseHTTPMiddleware):
     def __init__(self, app, static_token: str, token_store: TokenStore):
         super().__init__(app)
         if not static_token:
-            raise ValueError("static_token (OURA_MCP_TOKEN) is required")
+            raise ValueError("static_token (WILLYS_MCP_TOKEN) is required")
         self._static_token = static_token
         self._store = token_store
 
@@ -106,5 +106,5 @@ class BearerAuthMiddleware(BaseHTTPMiddleware):
         return JSONResponse(
             {"error": "unauthorized", "reason": reason},
             status_code=401,
-            headers={"WWW-Authenticate": 'Bearer realm="oura-mcp"'},
+            headers={"WWW-Authenticate": 'Bearer realm="willys-mcp"'},
         )
