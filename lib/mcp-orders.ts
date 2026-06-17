@@ -281,7 +281,7 @@ export async function mcpGetOrderDetails(
     }
 
     const response = await fetchWithRetry(
-      `https://www.willys.se/axfood/rest/orderdata?q=${orderNumber}`,
+      `https://www.willys.se/axfood/rest/orderdata?q=${encodeURIComponent(orderNumber)}`,
       { headers: getApiHeaders(cookies) },
     );
 
@@ -552,7 +552,7 @@ export async function mcpGetDeliverySlots(
     }
 
     const response = await fetchWithRetry(
-      `https://www.willys.se/axfood/rest/tms/delivery-slots?postalCode=${postalCode}`,
+      `https://www.willys.se/axfood/rest/tms/delivery-slots?postalCode=${encodeURIComponent(postalCode)}`,
       { headers: getCommonHeaders(cookies) },
     );
 
@@ -578,7 +578,7 @@ export async function mcpGetPickupSlots(
     }
 
     const response = await fetchWithRetry(
-      `https://www.willys.se/axfood/rest/pickup-slots/${storeId}`,
+      `https://www.willys.se/axfood/rest/pickup-slots/${encodeURIComponent(storeId)}`,
       { headers: getCommonHeaders(cookies) },
     );
 
@@ -939,7 +939,7 @@ export async function mcpGetProductDetail(
     // The buildId can be found from the page source or use a recent known one
     const buildId = "a4eecdbf"; // This might need to be updated occasionally
     const name = productName || `product-${productCode}`;
-    const url = `https://www.willys.se/_next/data/${buildId}/sv/produktdetalj/${name}.json?name=${encodeURIComponent(name)}&productCode=${encodeURIComponent(productCode)}&showInModal=true`;
+    const url = `https://www.willys.se/_next/data/${buildId}/sv/produktdetalj/${encodeURIComponent(name)}.json?name=${encodeURIComponent(name)}&productCode=${encodeURIComponent(productCode)}&showInModal=true`;
 
     console.log("Fetching product detail from:", url);
 

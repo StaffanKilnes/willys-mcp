@@ -62,10 +62,6 @@ export async function mcpGetWillysCookies(sessionId: string): Promise<string> {
 
   console.log("Found MCP session cookies for ID:", sessionId);
   console.log("Cookie string length:", session.cookies.length);
-  console.log(
-    "Cookie string preview:",
-    `${session.cookies.substring(0, 100)}...`,
-  );
 
   return session.cookies;
 }
