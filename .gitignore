@@ -72,3 +72,4 @@ TEST-COVERAGE-SUMMARY.md
 # test artifacts
 test-results/
 test-snapshots/
+*.bak
