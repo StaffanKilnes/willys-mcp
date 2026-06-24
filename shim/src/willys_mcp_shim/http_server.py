@@ -34,7 +34,7 @@ _TOKEN_TTL_S = 30 * 24 * 3600  # matches the OAuth expires_in
 
 
 def build_app() -> Starlette:
-    load_dotenv()  # no-op in prod (atlas injects env); convenient for local dev
+    load_dotenv()  # no-op in prod (the mcp-supervision ecosystem injects env); convenient for local dev
     missing = [k for k in _REQUIRED if not os.environ.get(k)]
     if missing:
         sys.stderr.write(f"willys-mcp: missing required env vars: {', '.join(missing)}\n")

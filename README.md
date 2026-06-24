@@ -1,13 +1,13 @@
 # willys-mcp (Pi deployment fork)
 
-A remote MCP server for [Willys](https://www.willys.se) (Swedish grocery), served like the other Pi MCPs (oura/ynab): OAuth + bearer over HTTPS, supervised by atlas, behind a Cloudflare Tunnel. Fork of `jimmystridh/willys-mcp`, adapted for headless deployment.
+A remote MCP server for [Willys](https://www.willys.se) (Swedish grocery), served like the other Pi MCPs (oura/ynab): OAuth + bearer over HTTPS, supervised by PM2 (the `mcp-supervision` ecosystem, app `mcp-willys`), behind a Cloudflare Tunnel. Fork of `jimmystridh/willys-mcp`, adapted for headless deployment.
 
 **Live:** `https://willys.kilnes.com/mcp/` (Claude.ai connector). Internal: `127.0.0.1:8426`.
 
 ## Architecture
 
 ```
-Claude.ai / Atlas ──HTTPS──> willys.kilnes.com (Cloudflare Tunnel)
+Claude.ai / Glitch ──HTTPS──> willys.kilnes.com (Cloudflare Tunnel)
                                    │  127.0.0.1:8426
                          shim/  (Python: Starlette + OAuth/bearer + token-TTL)
                                    │  FastMCP.as_proxy → StdioTransport(keep_alive)
@@ -26,9 +26,9 @@ The Python shim (`shim/`) terminates auth and proxies, via FastMCP over stdio, t
 ## Deploy
 
 ```bash
-ssh staffan@<pi> 'cd ~/tools/mcp/willys && git pull --ff-only && systemctl --user restart atlas'
+ssh staffan@<pi> 'cd ~/tools/mcp/willys && git pull --ff-only && pm2 restart mcp-willys'
 ```
-Restart respawns the shim + backend (picks up new TS). Avoid cron windows (04:00–07:00, Sun 17:00–19:00 CEST). atlas daemon entry: `willys-mcp` in `~/tools/atlas/jobs.config.ts`. Secrets in `~/tools/atlas/.env` (`WILLYS_*`).
+Restart respawns the shim + backend (picks up new TS). Avoid cron windows (04:00–07:00, Sun 17:00–19:00 CEST). PM2 app: `mcp-willys` in `~/tools/mcp/ecosystem.config.cjs`. Secrets in `~/tools/mcp/.env` (`WILLYS_*`).
 
 ## Known limitations
 

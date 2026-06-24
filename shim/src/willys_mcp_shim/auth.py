@@ -1,6 +1,6 @@
 """Bearer-token authentication middleware for /mcp/* paths.
 
-Accepts either the pre-shared WILLYS_MCP_TOKEN (atlas-internal callers)
+Accepts either the pre-shared WILLYS_MCP_TOKEN (internal callers)
 or any token in the OAuth-issued-token store (Claude.ai callers).
 """
 from __future__ import annotations
