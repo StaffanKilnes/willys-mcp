@@ -14,6 +14,7 @@ import type {
   WillysOrderItem,
   WillysPickupSlotsResponse,
 } from "@/lib/types";
+import { kgGuardError } from "./cart-guards";
 import { mcpGetWillysCookies } from "./mcp-auth";
 import {
   fetchCsrfToken,
@@ -343,6 +344,10 @@ export async function mcpAddToCart(
   productCode: string,
   quantity: number = 1,
 ): Promise<{ success: boolean; message?: string }> {
+  const guard = kgGuardError(productCode, quantity);
+  if (guard) {
+    return { success: false, message: guard };
+  }
   try {
     const cookies = await mcpGetWillysCookies(sessionId);
     if (!cookies) {
