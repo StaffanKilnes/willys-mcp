@@ -495,16 +495,16 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
           quantity?: number;
         };
         const result = await mcpAddToCart(sessionId, productCode, quantity);
-        return {
-          content: [
-            {
-              type: "text",
-              text: result.success
-                ? `✅ Added to cart`
-                : `❌ ${result.message}`,
-            },
-          ],
-        };
+        let text: string;
+        if (result.success) {
+          const cart = await mcpGetCart(sessionId);
+          text = cart
+            ? `✅ Added to cart — subtotal ${cart.subTotalPrice}, ${cart.totalItems} items`
+            : `✅ Added to cart (cart re-read failed — check the running total with get_cart)`;
+        } else {
+          text = `❌ ${result.message}`;
+        }
+        return { content: [{ type: "text", text }] };
       }
 
       case "mcp__willys_remove_from_cart": {
