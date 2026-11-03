@@ -48,7 +48,7 @@ interface Session {
 ```
 
 - **Storage**: In-memory Map with session ID as key
-- **Expiration**: 24 hours (86,400,000ms)
+- **Expiration**: 7 days; a session is validated against Willys (`GET /axfood/rest/account/orders`) before it is reused
 - **Cleanup**: Automatic every hour
 - **Security**: Session validation on every request
 
@@ -60,6 +60,14 @@ interface Session {
 4. **Cleanup**: Expired sessions automatically removed
 
 ## Authentication Flow
+
+### Session reuse, background login, daily refresh (`lib/mcp-session-manager.ts`)
+
+The Willys login page encrypts credentials client-side before `POST /login`, so there is no plain-HTTP login; the browser login below is the only way in and takes ~20 s. To keep `mcp__willys_login` fast:
+
+1. **Reuse**: the newest stored session is validated with one GET and returned at once when it still works.
+2. **Background login**: with no valid session, the browser login starts in the background. `login` waits up to 8 s for it, then answers with a pending sessionId; `mcp__willys_check_auth` reports in progress / failed / authenticated. This keeps the call under short tool timeouts (Paperclip's gateway allows 10 s).
+3. **Daily refresh**: when `WILLYS_USERNAME`/`WILLYS_PASSWORD` are set, the server logs in again every `WILLYS_SESSION_REFRESH_HOURS` (default 24, `0` disables), 30 s after start and then on the interval, skipping a tick while a login is in flight.
 
 ### Puppeteer Login Process
 

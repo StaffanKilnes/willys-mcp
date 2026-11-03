@@ -50,7 +50,7 @@ This is a **Willys MCP (Model Context Protocol) Server** that provides programma
    - Implements comprehensive Willys API operations
 
 2. **Session Management** (`lib/mcp-session-store.ts`)
-   - SQLite-based session store with 24-hour expiration
+   - SQLite-based session store with 7-day expiration (sessions are validated and reused, see Authentication Flow)
    - Persistent storage with automatic cleanup
    - Maps sessionId to authentication cookies
    - Integrates with order cache for efficient cleanup
@@ -122,9 +122,9 @@ This is a **Willys MCP (Model Context Protocol) Server** that provides programma
 ### Key Technical Details
 
 **Authentication Flow:**
-1. Call `mcp__willys_login` with credentials to get sessionId
+1. Call `mcp__willys_login` (credentials optional; the server falls back to `WILLYS_USERNAME`/`WILLYS_PASSWORD`). A stored session that still validates against Willys is returned at once. Otherwise the ~20 s browser login runs in the background and the reply gives a pending sessionId: poll `mcp__willys_check_auth` with it until ✅.
 2. Use sessionId in all subsequent tool calls
-3. Sessions expire after 24 hours automatically
+3. Sessions are kept 7 days and re-validated before reuse; with server-side credentials the server logs in again every `WILLYS_SESSION_REFRESH_HOURS` (default 24, 0 disables) so a fresh session is normally waiting. Logic in `lib/mcp-session-manager.ts`.
 
 **Product Codes:**
 - Use format like `101175556_ST` for products

@@ -14,7 +14,9 @@ interface Session {
 }
 
 class McpSessionStore {
-  private readonly SESSION_TIMEOUT = 24 * 60 * 60 * 1000; // 24 hours
+  // 7 days: the daily refresh replaces it long before, and the login tool
+  // validates a session against Willys before reusing it.
+  private readonly SESSION_TIMEOUT = 7 * 24 * 60 * 60 * 1000;
 
   generateSessionId(): string {
     return randomUUID();
