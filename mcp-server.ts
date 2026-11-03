@@ -17,6 +17,7 @@ import {
   mcpAuthenticateWithWillys,
   mcpIsAuthenticated,
   mcpLogout,
+  mcpValidateCookies,
 } from "./lib/mcp-auth";
 import {
   mcpAddToCart,
@@ -36,10 +37,24 @@ import {
   mcpSearchProducts,
   mcpSelectSlot,
 } from "./lib/mcp-orders";
+import { SessionManager } from "./lib/mcp-session-manager";
 import { mcpSessionStore } from "./lib/mcp-session-store";
+
+const sessionManager = new SessionManager({
+  latestSession: () => willysDatabase.getLatestSession(),
+  validate: mcpValidateCookies,
+  login: mcpAuthenticateWithWillys,
+  clearSession: (id) => mcpSessionStore.clearSession(id),
+  newSessionId: () => mcpSessionStore.generateSessionId(),
+  log: (message) => console.error(`[session] ${message}`),
+});
+// How long `login` waits for a background login before answering "pending".
+// Kept under Paperclip's 10 s tool timeout.
+const LOGIN_WAIT_MS = 8000;
+
 import {
-  resolveLoginCredentials,
   EXCLUDED_TOOLS,
+  resolveLoginCredentials,
   visibleTools,
 } from "./lib/tool-policy";
 
@@ -60,7 +75,7 @@ const tools = [
   {
     name: "mcp__willys_login",
     description:
-      "Login to Willys. Username/password are optional — the server falls back to WILLYS_USERNAME/WILLYS_PASSWORD. Returns a sessionId for subsequent calls.",
+      "Login to Willys. Username/password are optional — the server falls back to WILLYS_USERNAME/WILLYS_PASSWORD. Returns a sessionId for subsequent calls. A still-valid session is reused at once; otherwise the browser login (~20 s) runs in the background and the reply says to poll mcp__willys_check_auth with the sessionId until it is authenticated.",
     inputSchema: {
       type: "object" as const,
       properties: {
@@ -83,7 +98,8 @@ const tools = [
   },
   {
     name: "mcp__willys_check_auth",
-    description: "Check if currently authenticated with Willys",
+    description:
+      "Check if a sessionId is authenticated with Willys. Also reports a background login that is still in progress or has failed.",
     inputSchema: {
       type: "object" as const,
       properties: {
@@ -370,7 +386,9 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 
   if (EXCLUDED_TOOLS.has(name)) {
     return {
-      content: [{ type: "text", text: `❌ Tool "${name}" is disabled on this server` }],
+      content: [
+        { type: "text", text: `❌ Tool "${name}" is disabled on this server` },
+      ],
       isError: true,
     };
   }
@@ -390,15 +408,27 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
             isError: true,
           };
         }
-        const sessionId = mcpSessionStore.generateSessionId();
-        const result = await mcpAuthenticateWithWillys(sessionId, creds);
+        const state = await sessionManager.getOrStart(creds, LOGIN_WAIT_MS);
 
-        if (result.success) {
+        if (
+          state.status === "ready" &&
+          (await mcpIsAuthenticated(state.sessionId))
+        ) {
           return {
             content: [
               {
                 type: "text",
-                text: `✅ Successfully logged in. Session ID: ${sessionId}\n\nUse this sessionId in all subsequent tool calls.`,
+                text: `✅ Successfully logged in. Session ID: ${state.sessionId}\n\nUse this sessionId in all subsequent tool calls.`,
+              },
+            ],
+          };
+        }
+        if (state.status === "pending") {
+          return {
+            content: [
+              {
+                type: "text",
+                text: `⏳ Logging in to Willys in the background (about 20 s). Session ID: ${state.sessionId}\n\nPoll mcp__willys_check_auth with this sessionId every few seconds until it answers ✅ Authenticated, then use the sessionId in all subsequent tool calls.`,
               },
             ],
           };
@@ -407,7 +437,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
           content: [
             {
               type: "text",
-              text: `❌ Login failed: ${result.error || "Invalid credentials"}`,
+              text: `❌ Login failed: ${state.status === "failed" ? state.error : "Invalid credentials"}`,
             },
           ],
         };
@@ -424,14 +454,17 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       case "mcp__willys_check_auth": {
         const { sessionId } = args as { sessionId: string };
         const isAuth = await mcpIsAuthenticated(sessionId);
-        return {
-          content: [
-            {
-              type: "text",
-              text: isAuth ? "✅ Authenticated" : "❌ Not authenticated",
-            },
-          ],
-        };
+        let text = isAuth ? "✅ Authenticated" : "❌ Not authenticated";
+        if (!isAuth) {
+          const state = sessionManager.status(sessionId);
+          if (state.status === "pending") {
+            const seconds = Math.round((Date.now() - state.startedAt) / 1000);
+            text = `⏳ Login in progress (started ${seconds} s ago). Poll again in a few seconds.`;
+          } else if (state.status === "failed") {
+            text = `❌ Login failed: ${state.error}. Call mcp__willys_login again.`;
+          }
+        }
+        return { content: [{ type: "text", text }] };
       }
 
       case "mcp__willys_get_orders": {
@@ -784,6 +817,15 @@ async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
   console.error("Willys MCP Server running on stdio");
+
+  // Keep a fresh session waiting: log in again every WILLYS_SESSION_REFRESH_HOURS
+  // (default 24, 0 disables) when server-side credentials exist.
+  const creds = resolveLoginCredentials({});
+  const hours = Number(process.env.WILLYS_SESSION_REFRESH_HOURS ?? "24");
+  if (creds && Number.isFinite(hours) && hours > 0) {
+    sessionManager.startDailyRefresh(creds, hours * 60 * 60 * 1000);
+    console.error(`[session] refresh every ${hours} h`);
+  }
 }
 
 main().catch((error) => {

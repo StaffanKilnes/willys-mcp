@@ -36,7 +36,11 @@ class WillysDatabase {
       // Use Function constructor to prevent bundler from statically analyzing the import
       try {
         const dynamicImport = new Function("module", "return import(module)");
-        sqliteVec = await dynamicImport((process.platform === "darwin" ? "sqlite-vec-darwin-arm64" : "sqlite-vec-linux-arm64"));
+        sqliteVec = await dynamicImport(
+          process.platform === "darwin"
+            ? "sqlite-vec-darwin-arm64"
+            : "sqlite-vec-linux-arm64",
+        );
       } catch (_e) {
         sqliteVec = await import("sqlite-vec");
       }
@@ -110,8 +114,10 @@ class WillysDatabase {
               const manualPath = path.join(
                 cwd,
                 "node_modules",
-                (process.platform === "darwin" ? "sqlite-vec-darwin-arm64" : "sqlite-vec-linux-arm64"),
-                (process.platform === "darwin" ? "vec0.dylib" : "vec0.so"),
+                process.platform === "darwin"
+                  ? "sqlite-vec-darwin-arm64"
+                  : "sqlite-vec-linux-arm64",
+                process.platform === "darwin" ? "vec0.dylib" : "vec0.so",
               );
               console.log("Manual extension path:", manualPath);
               console.log("Manual path exists:", fs.existsSync(manualPath));
@@ -127,8 +133,10 @@ class WillysDatabase {
                 const genericPath = path.join(
                   cwd,
                   "node_modules",
-                  (process.platform === "darwin" ? "sqlite-vec-darwin-arm64" : "sqlite-vec-linux-arm64"),
-                  (process.platform === "darwin" ? "vec0.dylib" : "vec0.so"),
+                  process.platform === "darwin"
+                    ? "sqlite-vec-darwin-arm64"
+                    : "sqlite-vec-linux-arm64",
+                  process.platform === "darwin" ? "vec0.dylib" : "vec0.so",
                 );
                 if (fs.existsSync(genericPath)) {
                   this.db.loadExtension(genericPath);
@@ -501,6 +509,27 @@ class WillysDatabase {
     return {
       cookies: row.cookies,
       authenticated: Boolean(row.authenticated),
+    };
+  }
+
+  /** The newest unexpired session, for reuse by the login tool. */
+  getLatestSession(): {
+    sessionId: string;
+    cookies: string;
+    createdAt: number;
+  } | null {
+    const row = this.db
+      .prepare(
+        `SELECT session_id, cookies, created_at FROM sessions
+         WHERE authenticated = 1 AND expires_at > ?
+         ORDER BY created_at DESC LIMIT 1`,
+      )
+      .get(Date.now()) as any;
+    if (!row) return null;
+    return {
+      sessionId: row.session_id,
+      cookies: row.cookies,
+      createdAt: row.created_at,
     };
   }
 

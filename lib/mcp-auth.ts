@@ -49,6 +49,23 @@ export async function mcpAuthenticateWithWillys(
   }
 }
 
+/** Whether a stored cookie string still logs in: one cheap GET against the orders API. */
+export async function mcpValidateCookies(cookies: string): Promise<boolean> {
+  try {
+    const { fetchWithRetry, getApiHeaders } = await import("./request-utils");
+    const response = await fetchWithRetry(
+      "https://www.willys.se/axfood/rest/account/orders",
+      { headers: getApiHeaders(cookies), maxRetries: 1, timeout: 8000 },
+    );
+    if (!response.ok) return false;
+    const body = await response.text();
+    return !body.includes('"customerLoggedIn":"false"');
+  } catch (error) {
+    console.error("Session validation failed:", error);
+    return false;
+  }
+}
+
 export async function mcpLogout(sessionId: string): Promise<void> {
   mcpSessionStore.clearSession(sessionId);
 }
