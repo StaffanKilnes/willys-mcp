@@ -120,13 +120,14 @@ export async function mcpGetCart(
       throw new Error("No authentication cookies found");
     }
 
-    const csrfToken = await fetchCsrfToken(cookies);
+    const { token: csrfToken, cookies: csrfCookies } =
+      await fetchCsrfToken(cookies);
 
     const response = await fetchWithRetry(
       "https://www.willys.se/axfood/rest/cart",
       {
         headers: {
-          ...getApiHeaders(cookies, csrfToken),
+          ...getApiHeaders(csrfCookies, csrfToken),
           dnt: "1",
         },
       },
@@ -354,14 +355,15 @@ export async function mcpAddToCart(
       throw new Error("No authentication cookies found");
     }
 
-    const csrfToken = await fetchCsrfToken(cookies);
+    const { token: csrfToken, cookies: csrfCookies } =
+      await fetchCsrfToken(cookies);
     console.log("Retrieved CSRF token:", truncateForLog(csrfToken));
 
     const response = await fetchWithRetry(
       "https://www.willys.se/axfood/rest/cart/addProducts",
       {
         method: "POST",
-        headers: getApiHeaders(cookies, csrfToken),
+        headers: getApiHeaders(csrfCookies, csrfToken),
         body: JSON.stringify({
           products: [
             {
@@ -403,14 +405,15 @@ export async function mcpRemoveFromCart(
       throw new Error("No authentication cookies found");
     }
 
-    const csrfToken = await fetchCsrfToken(cookies);
+    const { token: csrfToken, cookies: csrfCookies } =
+      await fetchCsrfToken(cookies);
     console.log("Retrieved CSRF token:", truncateForLog(csrfToken));
 
     const response = await fetchWithRetry(
       "https://www.willys.se/axfood/rest/cart/addProducts",
       {
         method: "POST",
-        headers: getApiHeaders(cookies, csrfToken),
+        headers: getApiHeaders(csrfCookies, csrfToken),
         body: JSON.stringify({
           products: [
             {
@@ -609,7 +612,8 @@ export async function mcpSelectSlot(
       throw new Error("No authentication cookies found");
     }
 
-    const csrfToken = await fetchCsrfToken(cookies);
+    const { token: csrfToken, cookies: csrfCookies } =
+      await fetchCsrfToken(cookies);
 
     const url = isTmsSlot
       ? "https://www.willys.se/axfood/rest/tms/select-slot"
@@ -619,7 +623,7 @@ export async function mcpSelectSlot(
 
     const response = await fetchWithRetry(url, {
       method: "POST",
-      headers: getApiHeaders(cookies, csrfToken),
+      headers: getApiHeaders(csrfCookies, csrfToken),
       body: JSON.stringify(body),
     });
 
@@ -895,12 +899,13 @@ export async function mcpGetCommonProducts(sessionId: string) {
       truncateForLog(cookies, 100),
     );
 
-    const csrfToken = await fetchCsrfToken(cookies);
+    const { token: csrfToken, cookies: csrfCookies } =
+      await fetchCsrfToken(cookies);
 
     const response = await fetchWithRetry(
       "https://www.willys.se/axfoodcommercewebservices/v2/willys/cms/pages?pageType=ContentPage&pageLabelOrId=minavanligastevaror&code=&fields=DEFAULT",
       {
-        headers: getApiHeaders(cookies, csrfToken),
+        headers: getApiHeaders(csrfCookies, csrfToken),
       },
     );
 
@@ -938,7 +943,8 @@ export async function mcpGetProductDetail(
       throw new Error("No authentication cookies found");
     }
 
-    const csrfToken = await fetchCsrfToken(cookies);
+    const { token: csrfToken, cookies: csrfCookies } =
+      await fetchCsrfToken(cookies);
 
     // Build the product detail URL
     // The buildId can be found from the page source or use a recent known one
@@ -950,7 +956,7 @@ export async function mcpGetProductDetail(
 
     const response = await fetchWithRetry(url, {
       headers: {
-        ...getApiHeaders(cookies, csrfToken),
+        ...getApiHeaders(csrfCookies, csrfToken),
         purpose: "prefetch",
         "x-nextjs-data": "1",
       },

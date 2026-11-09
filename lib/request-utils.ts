@@ -239,9 +239,58 @@ export function getApiHeaders(
 }
 
 /**
+ * Apply a response's Set-Cookie headers to a `name=value; name=value` cookie
+ * string: set cookies replace or add, expired ones are dropped.
+ */
+export function mergeSetCookies(cookies: string, setCookies: string[]): string {
+  const jar = new Map<string, string>();
+  for (const part of cookies.split(";")) {
+    const pair = part.trim();
+    if (!pair) continue;
+    const eq = pair.indexOf("=");
+    if (eq <= 0) continue;
+    jar.set(pair.slice(0, eq), pair.slice(eq + 1));
+  }
+
+  for (const header of setCookies) {
+    const [pair, ...attributes] = header.split(";");
+    const eq = pair.indexOf("=");
+    if (eq <= 0) continue;
+    const name = pair.slice(0, eq).trim();
+    const value = pair.slice(eq + 1).trim();
+    const expired = attributes.some((attribute) => {
+      const [key, raw = ""] = attribute.trim().split("=");
+      const k = key.toLowerCase();
+      if (k === "max-age") return Number(raw) <= 0;
+      if (k === "expires") return Date.parse(raw) <= Date.now();
+      return false;
+    });
+    if (expired) {
+      jar.delete(name);
+    } else {
+      jar.set(name, value);
+    }
+  }
+
+  return [...jar].map(([name, value]) => `${name}=${value}`).join("; ");
+}
+
+export interface CsrfSession {
+  /** The token, sent as `x-csrf-token`. */
+  token: string;
+  /**
+   * The cookies to send with the request that uses the token. Willys ties the
+   * token to the `JSESSIONID` it sets in the token response; when the stored
+   * `JSESSIONID` has gone stale (a reused session), it is a new one, and the
+   * write fails with `401 csrf.badormissing` unless this cookie goes along.
+   */
+  cookies: string;
+}
+
+/**
  * Fetch CSRF token from Willys API with retry logic
  */
-export async function fetchCsrfToken(cookies: string): Promise<string> {
+export async function fetchCsrfToken(cookies: string): Promise<CsrfSession> {
   const response = await fetchWithRetry(
     "https://www.willys.se/axfood/rest/csrf-token",
     {
@@ -256,7 +305,10 @@ export async function fetchCsrfToken(cookies: string): Promise<string> {
   }
 
   const data: string | CsrfTokenResponse = await response.json();
-  return extractCsrfToken(data);
+  return {
+    token: extractCsrfToken(data),
+    cookies: mergeSetCookies(cookies, response.headers.getSetCookie()),
+  };
 }
 
 /**

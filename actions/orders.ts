@@ -330,13 +330,14 @@ export async function addToCart(
 ): Promise<{ success: boolean; message?: string }> {
   try {
     const cookies = await getWillysCookies();
-    const csrfToken = await fetchCsrfToken(cookies);
+    const { token: csrfToken, cookies: csrfCookies } =
+      await fetchCsrfToken(cookies);
 
     const response = await fetchWithRetry(
       "https://www.willys.se/axfood/rest/cart/addProducts",
       {
         method: "POST",
-        headers: getApiHeaders(cookies, csrfToken),
+        headers: getApiHeaders(csrfCookies, csrfToken),
         body: JSON.stringify({
           products: [
             {
@@ -470,13 +471,14 @@ export async function getCustomerInfo(): Promise<WillysCustomer | null> {
 export async function getCart(): Promise<WillysCart | null> {
   try {
     const cookies = await getWillysCookies();
-    const csrfToken = await fetchCsrfToken(cookies);
+    const { token: csrfToken, cookies: csrfCookies } =
+      await fetchCsrfToken(cookies);
 
     const response = await fetchWithRetry(
       "https://www.willys.se/axfood/rest/cart",
       {
         headers: {
-          ...getApiHeaders(cookies, csrfToken),
+          ...getApiHeaders(csrfCookies, csrfToken),
           dnt: "1",
         },
       },
@@ -644,12 +646,13 @@ export async function getPickupSlots(
 ): Promise<WillysPickupSlotsResponse | null> {
   try {
     const cookies = await getWillysCookies();
-    const csrfToken = await fetchCsrfToken(cookies);
+    const { token: csrfToken, cookies: csrfCookies } =
+      await fetchCsrfToken(cookies);
 
     const response = await fetchWithRetry(
       `https://www.willys.se/axfood/rest/slot/pickInStore?storeId=${storeId}&b2b=false`,
       {
-        headers: getApiHeaders(cookies, csrfToken),
+        headers: getApiHeaders(csrfCookies, csrfToken),
       },
     );
 
@@ -696,13 +699,14 @@ export async function selectSlot(
 ): Promise<{ success: boolean; message?: string }> {
   try {
     const cookies = await getWillysCookies();
-    const csrfToken = await fetchCsrfToken(cookies);
+    const { token: csrfToken, cookies: csrfCookies } =
+      await fetchCsrfToken(cookies);
 
     const response = await fetchWithRetry(
       `https://www.willys.se/axfood/rest/slot/slotInCart/${encodeURIComponent(slotCode)}?isTmsSlot=${isTmsSlot}`,
       {
         method: "POST",
-        headers: getApiHeaders(cookies, csrfToken),
+        headers: getApiHeaders(csrfCookies, csrfToken),
         body: tmsData ? JSON.stringify(tmsData) : null,
       },
     );
